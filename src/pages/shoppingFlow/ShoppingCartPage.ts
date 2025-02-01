@@ -2,6 +2,7 @@ import {Page} from "@playwright/test";
 
 class ShoppingCartPage {
     constructor(private page: Page) {}
+
     private productName = this.page.locator('//a[@class="product-name"]');
     private termsAndServiceButton = this.page.locator('#termsofservice');
     private checkoutButton = this.page.locator('#checkout');

@@ -2,6 +2,7 @@ import { Page } from '@playwright/test';
 
 class CheckoutPage {
     constructor(private page: Page) {}
+
     private billingAddress = this.page.locator('#billing-address-select');
     private billingContinueButton = this.page.locator('//div[@id="billing-buttons-container"]/input');
     private pickUpInStoreButton = this.page.locator('#PickUpInStore');

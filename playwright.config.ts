@@ -15,11 +15,11 @@ export default defineConfig({
   testDir: 'src/tests',
   timeout: 30000,
   use: {
-    headless: false,
+    headless: true,
     baseURL: 'https://demowebshop.tricentis.com',
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
-    trace: 'on-first-retry',
+    trace: 'on',
   },
   /* Run tests in files in parallel */
   fullyParallel: true,

@@ -2,6 +2,7 @@ import {Page} from "@playwright/test";
 
 class ProfilePage {
     constructor(private page: Page) {}
+
     private gender = this.page.locator('#gender-male');
     private firstName = this.page.locator('#FirstName');
     private lastName = this.page.locator('#LastName');

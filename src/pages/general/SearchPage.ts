@@ -14,6 +14,7 @@ class SearchPage {
             await dialog.accept();
         });
     }
+
     async isKeywordInProductTitles(keyword: string): Promise<boolean> {
         const titles = await this.productTitles.allTextContents();
         return titles.some(title => title.toLowerCase().includes(keyword.toLowerCase()));

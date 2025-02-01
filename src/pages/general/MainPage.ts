@@ -253,16 +253,6 @@ class MainPage {
     async isNewsLetterBlockVisible() {
         return await this.newsLetterBlog.isVisible();
     }
-
-    async clickRandomPopularTag(page: Page): Promise<void> {
-        const tags = this.popularTags;
-        const count = await tags.count();
-        if (count === 0) {
-            throw new Error('No tags available to select.');
-        }
-        const randomIndex = Math.floor(Math.random() * count);
-        await tags.nth(randomIndex).click();
-    }
 }
 
 export default MainPage;

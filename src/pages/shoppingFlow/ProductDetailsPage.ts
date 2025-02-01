@@ -3,6 +3,7 @@ import OrderPage from "../orders/OrderPage";
 
 class ProductDetailsPage {
     constructor(private page: Page) {}
+
     private recipientName = this.page.locator('#giftcard_2_RecipientName');
     private recipientEmail = this.page.locator('#giftcard_2_RecipientEmail');
     private recipientMessage = this.page.locator('#giftcard_2_Message');
@@ -51,7 +52,6 @@ class ProductDetailsPage {
         }
         return false;
     }
-
 
     async clickEmailFriendButton() {
         await this.emailFriendButton.click();
